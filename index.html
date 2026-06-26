@@ -2,420 +2,257 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Al Haram Sweets & Bakers | Fresh Cakes in Burewala</title>
-    <meta name="description" content="Premium birthday cakes, pastries, sweets and bakery items in Burewala. Handcrafted with premium ingredients.">
-    <meta name="keywords" content="Bakery Burewala, Birthday Cakes, Wedding Cakes, Pastries, Pakistani Sweets, Bakery Pakistan">
-    
-    <!-- Fonts & Icons -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Al Haram Sweets & Bakers | Premium Taste</title>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Loader -->
-    <div id="loader" class="loader-container">
-        <div class="loader-content">
-            <h1 class="loader-logo">Al Haram</h1>
-            <div class="loader-line"></div>
-        </div>
-    </div>
-
-    <!-- Mouse Follower -->
-    <div class="mouse-follower" id="mouseFollower"></div>
-
-    <!-- Header / Navbar -->
-    <header id="navbar">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="logo">
-                <span class="logo-main">Al Haram</span>
-                <span class="logo-sub">Sweets & Bakers</span>
-            </a>
-            <nav class="nav-menu" id="navMenu">
-                <a href="#home" class="nav-link active">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#categories" class="nav-link">Categories</a>
-                <a href="#menu" class="nav-link">Menu</a>
-                <a href="#gallery" class="nav-link">Gallery</a>
-                <a href="#reviews" class="nav-link">Reviews</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </nav>
-            <div class="nav-actions">
-                <a href="https://wa.me/923070491535" target="_blank" class="btn btn-nav">
-                    <i class="fab fa-whatsapp"></i> <span>Order Now</span>
-                </a>
-                <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </button>
+            <a href="#" class="nav-logo">AL HARAM<span>SWEETS & BAKERS</span></a>
+            <div class="nav-menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-item active">Home</a></li>
+                <li><a href="#menu" class="nav-item">Menu</a></li>
+                <li><a href="#about" class="nav-item">About Us</a></li>
+                <li><a href="#contact" class="nav-item">Contact</a></li>
+            </ul>
         </div>
-    </header>
+    </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-    <div class="hero-bg-zoom"></div>
-    <div class="hero-overlay"></div>
-    <div class="hero-particles" id="heroParticles"></div>
-    
-    <div class="hero-container">
-        <div class="hero-content">
-            <h1 class="hero-title">
-                <span class="title-line">Fresh Cakes</span>
-                <span class="title-line gold-text">Sweet Memories</span>
-                <span class="title-sub-line">Every Celebration Deserves Perfection</span>
-            </h1>
-            <p class="hero-description">
-                Fresh cakes, pastries, sweets and bakery items handcrafted with premium ingredients to elevate your special moments.
-            </p>
-            <div class="hero-cta">
-                <a href="#menu" class="btn btn-primary">Explore Menu</a>
-                <a href="https://wa.me/923070491535" target="_blank" class="btn btn-secondary">
-                    <i class="fab fa-whatsapp"></i> Order on WhatsApp
-                </a>
-            </div>
+        <div class="hero-bg-zoom"></div>
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">Fresh Cakes</span>
+                    <span class="title-line gold-text">Sweet Memories</span>
+                </h1>
+                <p class="hero-description">
+                    Handcrafted premium sweets, traditional mithai, and custom celebration cakes made with elite ingredients to elevate your special moments in Burewala.
+                </p>
+                
+                <div class="hero-cta">
+                    <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                    <a href="https://wa.me/923070491535" target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                    </a>
+                </div>
 
-            <div class="floating-cards-wrapper">
-                <div class="glass-card"><span>🎂 Birthday Cakes</span></div>
-                <div class="glass-card"><span>💍 Wedding Cakes</span></div>
-                <div class="glass-card"><span>🍰 Pastries</span></div>
-                <div class="glass-card"><span>🍞 Fresh Bread</span></div>
-                <div class="glass-card"><span>🧁 Cupcakes</span></div>
-                <div class="glass-card"><span>🍫 Chocolate Cakes</span></div>
+                <!-- Responsive Category Chips -->
+                <div class="floating-cards-wrapper">
+                    <div class="glass-card"><i class="fas fa-birthday-cake"></i> Birthday Cakes</div>
+                    <div class="glass-card"><i class="fas fa-church"></i> Wedding Cakes</div>
+                    <div class="glass-card"><i class="fas fa-cookie"></i> Pastries</div>
+                    <div class="glass-card"><i class="fas fa-bread-slice"></i> Fresh Bread</div>
+                    <div class="glass-card"><i class="fas fa-candy-cane"></i> Shahi Patisa</div>
+                    <div class="glass-card"><i class="fas fa-stroopwafel"></i> Desi Ghee Mithai</div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="scroll-indicator">
-        <div class="mouse">
-            <div class="wheel"></div>
+        <div class="scroll-indicator">
+            <div class="mouse"><div class="wheel"></div></div>
+            <span class="scroll-text">Scroll Down</span>
         </div>
-        <span class="scroll-text">Scroll Down</span>
-    </div>
-</section>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="section-header">
+            <span class="section-subtitle">Our Delicacies</span>
+            <h2 class="section-title">Explore The Menu</h2>
+            <div class="title-divider"></div>
+        </div>
+
+        <div class="menu-grid">
+            <!-- Item 1: Chocolate Fudge Cake -->
+            <div class="menu-card">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?q=80&w=600" alt="Premium Chocolate Fudge Cake">
+                </div>
+                <div class="card-info">
+                    <h3>Fudge Chocolate Cake</h3>
+                    <p>Rich Belgian chocolate layers filled with silk chocolate ganache.</p>
+                    <div class="card-footer">
+                        <span class="price">Rs. 1,500 <small>/ pound</small></span>
+                        <a href="https://wa.me/923070491535?text=I%20want%20to%20order%20Fudge%20Chocolate%20Cake" target="_blank" class="menu-order-btn"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2: Wedding Cake -->
+            <div class="menu-card">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1527419220445-015024f0c72c?q=80&w=600" alt="Luxury Multi-Tier Wedding Cake">
+                </div>
+                <div class="card-info">
+                    <h3>Tiered Wedding Cake</h3>
+                    <p>Custom multi-tier fondant masterpiece tailored to your theme.</p>
+                    <div class="card-footer">
+                        <span class="price">On Demand</span>
+                        <a href="https://wa.me/923070491535?text=I%20want%20to%20order%20a%20Custom%20Wedding%20Cake" target="_blank" class="menu-order-btn"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3: Premium Pastries -->
+            <div class="menu-card">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1557925923-cd4648e21187?q=80&w=600" alt="Gourmet French Pastries">
+                </div>
+                <div class="card-info">
+                    <h3>Premium Pastries</h3>
+                    <p>Flaky crust options featuring seasonal fruits and velvety cream fillings.</p>
+                    <div class="card-footer">
+                        <span class="price">Rs. 120 <small>/ piece</small></span>
+                        <a href="https://wa.me/923070491535?text=I%20want%20to%20order%20Premium%20Pastries" target="_blank" class="menu-order-btn"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 4: Gulab Jamun -->
+            <div class="menu-card">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1626132647523-66f5bf380027?q=80&w=600" alt="Authentic Desi Ghee Gulab Jamun">
+                </div>
+                <div class="card-info">
+                    <h3>Desi Ghee Gulab Jamun</h3>
+                    <p>Soft, golden-fried milk solids soaked deep in cardamom flavored sugar syrup.</p>
+                    <div class="card-footer">
+                        <span class="price">Rs. 1,200 <small>/ kg</small></span>
+                        <a href="https://wa.me/923070491535?text=I%20want%20to%20order%20Desi%20Ghee%20Gulab%20Jamun" target="_blank" class="menu-order-btn"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 5: Khoya Barfi -->
+            <div class="menu-card">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1601356616077-695728de1741?q=80&w=600" alt="Traditional Silver Leaf Khoya Barfi">
+                </div>
+                <div class="card-info">
+                    <h3>Premium Khoya Barfi</h3>
+                    <p>Traditional dense milk confection made with pure condensed khoya and silver leaf.</p>
+                    <div class="card-footer">
+                        <span class="price">Rs. 1,400 <small>/ kg</small></span>
+                        <a href="https://wa.me/923070491535?text=I%20want%20to%20order%20Premium%20Khoya%20Barfi" target="_blank" class="menu-order-btn"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 6: Shahi Patisa -->
+            <div class="menu-card">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1589119908995-c6800febd394?q=80&w=600" alt="Flaky Golden Shahi Patisa Mithai">
+                </div>
+                <div class="card-info">
+                    <h3>Shahi Almond Patisa</h3>
+                    <p>Flaky, crisp layers of gram flour interwoven with premium almonds and pistachios.</p>
+                    <div class="card-footer">
+                        <span class="price">Rs. 1,300 <small>/ kg</small></span>
+                        <a href="https://wa.me/923070491535?text=I%20want%20to%20order%20Shahi%20Almond%20Patisa" target="_blank" class="menu-order-btn"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- About Section -->
-    <section id="about" class="about section-padding">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-image-wrapper reveal-left">
-                    <img src="https://images.pexels.com/photos/1055271/pexels-photo-1055271.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Premium Bakery Interior" class="about-img-main" onerror="this.onerror=null;this.src='https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=800';">
-                    <div class="about-img-accent-box">
-                        <span class="accent-number">4.4</span>
-                        <span class="accent-text">Google Rated ⭐</span>
-                    </div>
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-img">
+                <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=800" alt="Premium Baking Process">
+                <div class="experience-badge">
+                    <span class="years">Premium</span>
+                    <span class="exp-text">Quality Guaranteed</span>
                 </div>
-                <div class="about-content-wrapper reveal-right">
-                    <span class="section-subtitle">Since Day One</span>
-                    <h2 class="section-title">Crafting Pure Luxury For Your Palate</h2>
-                    <p class="section-desc">
-                        At Al Haram Sweets & Bakers, located in the heart of Burewala, we merge traditional craftsmanship with premium modern confectionery techniques. Every creation is an artistic expression of flavor, designed to offer an exquisite sensory experience.
-                    </p>
-                    
-                    <div class="about-features-grid">
-                        <div class="feature-icon-card">
-                            <i class="fas fa-seedling"></i>
-                            <h4>Fresh Ingredients</h4>
-                        </div>
-                        <div class="feature-icon-card">
-                            <i class="fas fa-user-chef"></i>
-                            <i class="fas fa-user-tie"></i>
-                            <h4>Experienced Bakers</h4>
-                        </div>
-                        <div class="feature-icon-card">
-                            <i class="fas fa-birthday-cake"></i>
-                            <h4>Custom Cakes</h4>
-                        </div>
-                        <div class="feature-icon-card">
-                            <i class="fas fa-shipping-fast"></i>
-                            <h4>Fast Service</h4>
-                        </div>
-                        <div class="feature-icon-card">
-                            <i class="fas fa-percentage"></i>
-                            <h4>Affordable Prices</h4>
-                        </div>
-                        <div class="feature-icon-card">
-                            <i class="fas fa-award"></i>
-                            <h4>Premium Quality</h4>
-                        </div>
-                    </div>
+            </div>
+            <div class="about-content">
+                <span class="section-subtitle">Our Heritage</span>
+                <h2 class="section-title">Crafting Sweet Perfection</h2>
+                <p>At Al Haram Sweets & Bakers, we combine culinary artistry with uncompromising standards. Every product that leaves our kitchen is created using fine ingredients, pristine preparation methods, and deep respect for flavor traditions.</p>
+                <p>Serving the community of Burewala with pride, we specialize in making your celebrations extraordinary with custom designs and tastes that linger beautifully.</p>
+                <div class="features-row">
+                    <div class="feature-item"><i class="fas fa-ribbon"></i> 100% Fresh Ingredients</div>
+                    <div class="feature-item"><i class="fas fa-truck"></i> Safe Timely Delivery</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Product Categories Section -->
-    <section id="categories" class="categories section-padding bg-darker">
-        <div class="container">
-            <div class="section-header center">
-                <span class="section-subtitle">Browse Our Empire</span>
-                <h2 class="section-title">Exquisite Product Categories</h2>
-                <div class="title-divider"></div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-header">
+            <span class="section-subtitle">Get In Touch</span>
+            <h2 class="section-title">Visit or Order Now</h2>
+            <div class="title-divider"></div>
+        </div>
+        
+        <div class="contact-container">
+            <div class="contact-info-block">
+                <h3>Al Haram Sweets & Bakers</h3>
+                <p class="contact-desc">Drop by our main branch in Burewala or message us directly on WhatsApp to book your custom orders instantly.</p>
+                
+                <div class="info-link">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Location</h4>
+                        <p>505 EB Road, Burewala, Punjab, Pakistan</p>
+                    </div>
+                </div>
+                <div class="info-link">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <h4>Phone Number</h4>
+                        <p>+92 307 0491535</p>
+                    </div>
+                </div>
+                <div class="info-link">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email Address</h4>
+                        <p>info@alharambakers.com</p>
+                    </div>
+                </div>
             </div>
             
-            <div class="categories-grid" id="categoriesGrid">
-                <!-- Programmatically populated for robustness -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Menu Section -->
-    <section id="menu" class="menu section-padding">
-        <div class="container">
-            <div class="section-header center">
-                <span class="section-subtitle">Handcrafted Masterpieces</span>
-                <h2 class="section-title">Our Premium Menu</h2>
-                <div class="title-divider"></div>
-            </div>
-
-            <!-- Menu Filters -->
-            <div class="menu-tabs">
-                <button class="tab-btn active" data-filter="all">All Creations</button>
-                <button class="tab-btn" data-filter="cakes">Signature Cakes</button>
-                <button class="tab-btn" data-filter="pastries">Premium Pastries</button>
-                <button class="tab-btn" data-filter="sweets">Pakistani Sweets</button>
-                <button class="tab-btn" data-filter="bakery">Fresh Bakery & Savory</button>
-            </div>
-            
-            <div class="menu-grid" id="menuGrid">
-                <!-- Data injected via JS -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery section-padding bg-darker">
-        <div class="container">
-            <div class="section-header center">
-                <span class="section-subtitle">Visual Delights</span>
-                <h2 class="section-title">The Master Gallery</h2>
-                <div class="title-divider"></div>
-            </div>
-
-            <div class="gallery-filters">
-                <button class="filter-btn active" data-gfilter="all">All Frames</button>
-                <button class="filter-btn" data-gfilter="interiors">Ambiance</button>
-                <button class="filter-btn" data-gfilter="displays">Cakes & Art</button>
-                <button class="filter-btn" data-gfilter="craft">The Process</button>
-            </div>
-
-            <div class="masonry-gallery" id="masonryGallery">
-                <!-- Structural programmatic layout -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Lightbox Modal -->
-    <div id="lightbox" class="lightbox">
-        <span class="lightbox-close">&times;</span>
-        <img class="lightbox-content" id="lightboxImg" alt="Enlarged view">
-        <div id="lightboxCaption" class="lightbox-caption"></div>
-    </div>
-
-    <!-- Why Choose Us & Stats Section -->
-    <section class="why-us section-padding">
-        <div class="container">
-            <div class="why-us-grid">
-                <div class="why-us-left reveal-left">
-                    <span class="section-subtitle">Uncompromised Excellence</span>
-                    <h2 class="section-title">Why Patrons Choose Al Haram</h2>
-                    <p class="section-desc">We maintain clinical hygiene standards and utilize world-class structural ingredients to deliver pristine taste profiles daily.</p>
-                    
-                    <div class="stats-container" id="statsContainer">
-                        <div class="stat-card">
-                            <h3 class="stat-number" data-target="15">0</h3>
-                            <p class="stat-label">Years of Experience</p>
-                        </div>
-                        <div class="stat-card">
-                            <h3 class="stat-number" data-target="14000">0</h3>
-                            <p class="stat-label">Happy Customers</p>
-                        </div>
-                        <div class="stat-card">
-                            <h3 class="stat-number" data-target="5000">0</h3>
-                            <p class="stat-label">Custom Cakes Built</p>
-                        </div>
-                        <div class="stat-card">
-                            <h3 class="stat-number" data-target="100">0</h3>
-                            <p class="stat-label">Fresh Products Daily</p>
-                        </div>
-                    </div>
+            <div class="contact-form-block">
+                <!-- Exact Location Pin Point Interactive Map Setup -->
+                <div class="map-wrapper">
+                    <iframe 
+                        src="https://maps.google.com/maps?q=Al%20Haram%20Sweets%20%26%20Bakers,%20505%20EB%20Road,%20Burewala&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                        width="100%" 
+                        height="280" 
+                        style="border:0; border-radius: 12px;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
-
-                <div class="why-us-right reveal-right">
-                    <div class="feature-cards-grid">
-                        <div class="f-card"><h5>Fresh Everyday</h5></div>
-                        <div class="f-card"><h5>Premium Ingredients</h5></div>
-                        <div class="f-card"><h5>Affordable Prices</h5></div>
-                        <div class="f-card"><h5>Fast Service</h5></div>
-                        <div class="f-card"><h5>Hygienic Kitchen</h5></div>
-                        <div class="f-card"><h5>Experienced Bakers</h5></div>
-                        <div class="f-card"><h5>Customized Cakes</h5></div>
-                        <div class="f-card"><h5>Premium Packaging</h5></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Customer Reviews Section -->
-    <section id="reviews" class="reviews section-padding bg-darker">
-        <div class="container">
-            <div class="section-header center">
-                <span class="section-subtitle">Patron Testimonials</span>
-                <h2 class="section-title">Google Reviews & Ratings</h2>
-                <div class="google-meta-rating">
-                    <span class="g-score">4.4 / 5.0</span>
-                    <div class="g-stars">⭐⭐⭐⭐⭐</div>
-                    <span class="g-count">Based on 14 Authentic Reviews</span>
-                </div>
-            </div>
-
-            <div class="reviews-slider-wrapper">
-                <div class="reviews-slider" id="reviewsSlider">
-                    <!-- Cards injection -->
-                </div>
-                <div class="slider-controls">
-                    <button class="slider-arrow prev" id="slidePrev"><i class="fas fa-chevron-left"></i></button>
-                    <button class="slider-arrow next" id="slideNext"><i class="fas fa-chevron-right"></i></button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact & Map Section -->
-    <section id="contact" class="contact section-padding">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info-panel reveal-left">
-                    <span class="section-subtitle">Get In Touch</span>
-                    <h2 class="section-title">Visit Our Flagship Location</h2>
-                    
-                    <div class="info-list">
-                        <div class="info-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Flagship Address</h4>
-                                <p>505 EB Road, Near KSP Pizza Cafe, Bismillah Town, Burewala, Punjab, Pakistan</p>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-phone-alt"></i>
-                            <div>
-                                <h4>Phone Configuration</h4>
-                                <p>+92 307 0491535</p>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-clock"></i>
-                            <div>
-                                <h4>Operational Hours</h4>
-                                <p>Daily: Open until 11:30 PM</p>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email Enquiries</h4>
-                                <p>concierge@alharambakers.com</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="action-row-buttons">
-                        <a href="tel:+923070491535" class="btn btn-action-call"><i class="fas fa-phone-alt"></i> Call Now</a>
-                        <a href="https://maps.google.com/?q=Al+Haram+Sweets+%26+Bakers+Burewala" target="_blank" class="btn btn-action-dir"><i class="fas fa-directions"></i> Get Directions</a>
-                    </div>
-                </div>
-
-                <div class="contact-form-panel reveal-right">
-                    <form class="premium-form" id="contactForm" onsubmit="event.preventDefault();">
-                        <h3>Send A Message</h3>
-                        <div class="form-group">
-                            <input type="text" placeholder="Your Full Name" required class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Your Email Address" required class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Specify Order or Inquiry details..." rows="5" required class="form-control"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary full-width">Transmit Message</button>
-                    </form>
-                </div>
-            </div>
-
-            <!-- Google Business Direct Map Integration Wrapper -->
-            <div class="map-wrapper-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3431.116719114777!2d72.6781254!3d30.1624219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393d2906ec143891%3A0xc3f8373b9df70ad!2sAl%20Haram%20Sweets%20%26%20Bakers!5e0!3m2!1sen!2s!4v1710000000000!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="container footer-grid">
-            <div class="footer-brand">
-                <a href="#" class="logo">
-                    <span class="logo-main">Al Haram</span>
-                    <span class="logo-sub">Sweets & Bakers</span>
-                </a>
-                <p class="footer-desc">Crafting computational culinary luxury since inception. The elite taste profile framework in Punjab.</p>
-                <div class="google-badge-footer">
-                    <span>Google Business Rating: ⭐ 4.4 / 5.0 (14 Reviews)</span>
-                </div>
-            </div>
-            
-            <div class="footer-links">
-                <h4>Quick Exploration</h4>
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#categories">Categories</a>
-                <a href="#menu">Menu</a>
-                <a href="#gallery">Gallery</a>
-            </div>
-
-            <div class="footer-links">
-                <h4>Product Lines</h4>
-                <a href="#menu">Custom Cakes</a>
-                <a href="#menu">Premium Pastries</a>
-                <a href="#menu">Pakistani Sweets</a>
-                <a href="#menu">Continental Savories</a>
-            </div>
-
-            <div class="footer-newsletter">
-                <h4>Newsletter Configuration</h4>
-                <p>Subscribe to receive high-luxury menu additions.</p>
-                <div class="newsletter-input-group">
-                    <input type="email" placeholder="Enter Email">
-                    <button aria-label="Subscribe"><i class="fas fa-paper-plane"></i></button>
-                </div>
-                <div class="social-icons">
-                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="https://wa.me/923070491535" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="footer-bottom">
-            <div class="container bottom-flex">
-                <p>&copy; 2026 Al Haram Sweets & Bakers. All Rights Reserved.</p>
-                <p>Designed to Agency Standards.</p>
-            </div>
-        </div>
+    <footer class="footer">
+        <p>&copy; 2026 Al Haram Sweets & Bakers. All Rights Reserved. Designed with Elegance.</p>
     </footer>
-
-    <!-- Floating Global Functional Triggers -->
-    <div class="global-floating-actions">
-        <a href="https://wa.me/923070491535" target="_blank" class="float-btn wa-float" aria-label="WhatsApp Order"><i class="fab fa-whatsapp"></i></a>
-        <a href="tel:+923070491535" class="float-btn call-float" aria-label="Call Direct"><i class="fas fa-phone-alt"></i></a>
-        <button id="backToTop" class="float-btn top-float" aria-label="Back to Top"><i class="fas fa-chevron-up"></i></button>
-    </div>
 
     <script src="script.js"></script>
 </body>
